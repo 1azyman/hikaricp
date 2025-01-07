@@ -2,33 +2,38 @@ package com.evolveum.hikaricp;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import oracle.jdbc.OracleDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class PoolTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(PoolTest.class);
 
-    private static final String JDBC_URL = "jdbc:oracle:thin:@localhost:1521:XE";
-    private static final String JDBC_USERNAME = "midtest410";
-    private static final String JDBC_PASSWORD = "midtest410";
+    @Test(timeOut = 10_000L)
+    public void testOracle() throws Exception {
+        testThreadInterruption(OracleDriver.class, "jdbc:oracle:thin:@localhost:1521:XE", "midtest410", "midtest410", "select 123 from dual");
+    }
 
     @Test(timeOut = 10_000L)
-    public void exampleTest() throws Exception {
-        HikariDataSource dataSource = createDataSource();
+    public void testPostgreSQL() throws Exception {
+        testThreadInterruption(org.postgresql.Driver.class, "jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres", "select 123");
+    }
+
+    public void testThreadInterruption
+            (Class<? extends Driver> driver, String jdbcUrl, String jdbcUsername, String jdbcPassword, String query) throws Exception {
+
+        HikariDataSource dataSource = createDataSource(driver, jdbcUrl, jdbcUsername, jdbcPassword);
         try {
-            MyRunnable runnable = new MyRunnable(dataSource);
+            MyRunnable runnable = new MyRunnable(dataSource, query);
             Thread thread = new Thread(runnable);
             thread.start();
 
-            makeQuery(dataSource, "Doing some work on main thread");
+            makeQuery(dataSource, query, "Doing some work on main thread");
 
             Thread.sleep(2_000L);
 
@@ -36,7 +41,7 @@ public class PoolTest {
             thread.interrupt();
             LOG.info("Interrupted other thread");
 
-            makeQuery(dataSource, "Doing some work on main thread after other thread was interrupted");
+            makeQuery(dataSource, query, "Doing some work on main thread after other thread was interrupted");
 
             Thread.sleep(500L);
 
@@ -46,18 +51,21 @@ public class PoolTest {
         }
     }
 
-    private HikariDataSource createDataSource() {
-        HikariConfig config = createHikariConfig();
+    private HikariDataSource createDataSource(
+            Class<? extends Driver> driver, String jdbcUrl, String jdbcUsername, String jdbcPassword) {
+        HikariConfig config = createHikariConfig(driver, jdbcUrl, jdbcUsername, jdbcPassword);
         return new HikariDataSource(config);
     }
 
-    private HikariConfig createHikariConfig() {
+    private HikariConfig createHikariConfig(
+            Class<? extends Driver> driver, String jdbcUrl, String jdbcUsername, String jdbcPassword) {
+
         HikariConfig config = new HikariConfig();
 
-        config.setDriverClassName(oracle.jdbc.OracleDriver.class.getName());
-        config.setJdbcUrl(JDBC_URL);
-        config.setUsername(JDBC_USERNAME);
-        config.setPassword(JDBC_PASSWORD);
+        config.setDriverClassName(driver.getName());
+        config.setJdbcUrl(jdbcUrl);
+        config.setUsername(jdbcUsername);
+        config.setPassword(jdbcPassword);
 
         config.setRegisterMbeans(true);
 
@@ -81,10 +89,13 @@ public class PoolTest {
 
         private final HikariDataSource dataSource;
 
+        private final String query;
+
         private Throwable throwable;
 
-        public MyRunnable(HikariDataSource dataSource) {
+        public MyRunnable(HikariDataSource dataSource, String query) {
             this.dataSource = dataSource;
+            this.query = query;
         }
 
         public Throwable getThrowable() {
@@ -96,7 +107,7 @@ public class PoolTest {
             try {
                 try {
                     while (true) {
-                        makeQuery(dataSource, "Doing some work on other thread");
+                        makeQuery(dataSource, query, "Doing some work on other thread");
 
                         Thread.sleep(500L);
                     }
@@ -105,19 +116,19 @@ public class PoolTest {
 
                     // TODO this is causing the issue
                     //  -> see MockTaskHandler.run() -> MiscUtil.sleepNonInterruptibly(long) -> Thread.currentThread().interrupt();
-                      Thread.currentThread().interrupt();
+                    Thread.currentThread().interrupt();
                 }
 
-                makeQuery(dataSource, "Doing some work on other thread after it was interrupted");
+                makeQuery(dataSource, query, "Doing some work on other thread after it was interrupted");
             } catch (Throwable t) {
                 throwable = t;
             }
         }
     }
 
-    private static void makeQuery(HikariDataSource dataSource, String msg) {
+    private static void makeQuery(HikariDataSource dataSource, String query, String msg) {
         try (Connection connection = dataSource.getConnection()) {
-            PreparedStatement stmt = connection.prepareStatement("select 123 from dual");
+            PreparedStatement stmt = connection.prepareStatement(query);
             ResultSet result = stmt.executeQuery();
             result.next();
 
