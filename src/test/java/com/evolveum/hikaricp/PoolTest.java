@@ -19,13 +19,6 @@ public class PoolTest {
     private static final String JDBC_USERNAME = "midtest410";
     private static final String JDBC_PASSWORD = "midtest410";
 
-    @Test(enabled = false, timeOut = 300_000L)
-    public void exampleTest100Times() throws Exception {
-        for (int i = 0; i < 100; i++) {
-            exampleTest();
-        }
-    }
-
     @Test(timeOut = 30_000L)
     public void exampleTest() throws Exception {
         HikariDataSource dataSource = createDataSource();
@@ -36,7 +29,7 @@ public class PoolTest {
 
             makeQuery(dataSource, "Doing some work on main thread");
 
-            Thread.currentThread().sleep(10_000L);
+            Thread.currentThread().sleep(2_000L);
 
             LOG.info(">>>>>> Interrupting other thread");
             thread.interrupt();
@@ -44,7 +37,7 @@ public class PoolTest {
 
             makeQuery(dataSource, "Doing some work on main thread after other thread was interrupted");
 
-            Thread.currentThread().sleep(2_000L);
+            Thread.currentThread().sleep(500L);
         } finally {
             dataSource.close();
         }
@@ -99,6 +92,10 @@ public class PoolTest {
                 }
             } catch (InterruptedException ex) {
                 LOG.error(">>>>>> Interrupted", ex);
+
+                // this is causing the issue
+                //  -> see MockTaskHandler.run() -> MiscUtil.sleepNonInterruptibly(long) -> Thread.currentThread().interrupt();
+                Thread.currentThread().interrupt();
             }
 
             makeQuery(dataSource, "Doing some work on other thread after it was interrupted");
@@ -114,8 +111,8 @@ public class PoolTest {
             Long value = result.getLong(1);
             LOG.info("{}: {}", msg, value);
 
-            result.close();
-            stmt.close();
+//            result.close();
+//            stmt.close();
 
             connection.commit();
         } catch (Throwable throwable) {
