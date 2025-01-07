@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class PoolTest {
 
@@ -19,7 +20,7 @@ public class PoolTest {
     private static final String JDBC_USERNAME = "midtest410";
     private static final String JDBC_PASSWORD = "midtest410";
 
-    @Test(timeOut = 30_000L)
+    @Test(timeOut = 10_000L)
     public void exampleTest() throws Exception {
         HikariDataSource dataSource = createDataSource();
         try {
@@ -29,15 +30,17 @@ public class PoolTest {
 
             makeQuery(dataSource, "Doing some work on main thread");
 
-            Thread.currentThread().sleep(2_000L);
+            Thread.sleep(2_000L);
 
-            LOG.info(">>>>>> Interrupting other thread");
+            LOG.info("Interrupting other thread");
             thread.interrupt();
-            LOG.info(">>>>>> Interrupted other thread");
+            LOG.info("Interrupted other thread");
 
             makeQuery(dataSource, "Doing some work on main thread after other thread was interrupted");
 
-            Thread.currentThread().sleep(500L);
+            Thread.sleep(500L);
+
+            Assert.assertNull(runnable.getThrowable(), "Exception occurred in other thread");
         } finally {
             dataSource.close();
         }
@@ -78,27 +81,37 @@ public class PoolTest {
 
         private final HikariDataSource dataSource;
 
+        private Throwable throwable;
+
         public MyRunnable(HikariDataSource dataSource) {
             this.dataSource = dataSource;
+        }
+
+        public Throwable getThrowable() {
+            return throwable;
         }
 
         @Override
         public void run() {
             try {
-                while (true) {
-                    makeQuery(dataSource, "Doing some work on other thread");
+                try {
+                    while (true) {
+                        makeQuery(dataSource, "Doing some work on other thread");
 
-                    Thread.sleep(500L);
+                        Thread.sleep(500L);
+                    }
+                } catch (InterruptedException ex) {
+                    LOG.error("Interrupted", ex);
+
+                    // TODO this is causing the issue
+                    //  -> see MockTaskHandler.run() -> MiscUtil.sleepNonInterruptibly(long) -> Thread.currentThread().interrupt();
+                      Thread.currentThread().interrupt();
                 }
-            } catch (InterruptedException ex) {
-                LOG.error(">>>>>> Interrupted", ex);
 
-                // this is causing the issue
-                //  -> see MockTaskHandler.run() -> MiscUtil.sleepNonInterruptibly(long) -> Thread.currentThread().interrupt();
-                Thread.currentThread().interrupt();
+                makeQuery(dataSource, "Doing some work on other thread after it was interrupted");
+            } catch (Throwable t) {
+                throwable = t;
             }
-
-            makeQuery(dataSource, "Doing some work on other thread after it was interrupted");
         }
     }
 
@@ -111,14 +124,12 @@ public class PoolTest {
             Long value = result.getLong(1);
             LOG.info("{}: {}", msg, value);
 
-//            result.close();
-//            stmt.close();
+            result.close();
+            stmt.close();
 
             connection.commit();
-        } catch (Throwable throwable) {
-            LOG.error(">>>>>>>>>>>>>>>>>>> Error while making query, this shouldn't happen", throwable);
-
-            Assert.fail("Error while making query, this shouldn't happen", throwable);
+        } catch (SQLException ex) {
+            throw new RuntimeException("Error while making query, this shouldn't happen", ex);
         }
     }
 }
