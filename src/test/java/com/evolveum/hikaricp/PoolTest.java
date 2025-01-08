@@ -52,7 +52,7 @@ public class PoolTest {
             if (runnable.getThrowable() != null) {
                 runnable.getThrowable().printStackTrace(ps);
             }
-            Assert.assertNull(runnable.getThrowable(), "Exception occurred in other thread\n" + bos.toString());
+            Assert.assertNull(runnable.getThrowable(), "Exception occurred in other thread\n" + bos);
         } finally {
             dataSource.close();
         }
