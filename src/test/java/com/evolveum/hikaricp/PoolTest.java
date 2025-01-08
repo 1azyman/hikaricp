@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.sql.*;
 
 public class PoolTest {
@@ -45,7 +47,12 @@ public class PoolTest {
 
             Thread.sleep(500L);
 
-            Assert.assertNull(runnable.getThrowable(), "Exception occurred in other thread");
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            PrintStream ps = new PrintStream(bos);
+            if (runnable.getThrowable() != null) {
+                runnable.getThrowable().printStackTrace(ps);
+            }
+            Assert.assertNull(runnable.getThrowable(), "Exception occurred in other thread\n" + bos.toString());
         } finally {
             dataSource.close();
         }
@@ -104,7 +111,7 @@ public class PoolTest {
 
         @Override
         public void run() {
-            try {
+            try {// (Connection connection = dataSource.getConnection()) {
                 try {
                     while (true) {
                         makeQuery(dataSource, query, "Doing some work on other thread");
@@ -118,6 +125,8 @@ public class PoolTest {
                     //  -> see MockTaskHandler.run() -> MiscUtil.sleepNonInterruptibly(long) -> Thread.currentThread().interrupt();
                     Thread.currentThread().interrupt();
                 }
+
+//                LOG.info("Connection valid: {} and closed: {}", connection.isValid(1_000), connection.isClosed());
 
                 makeQuery(dataSource, query, "Doing some work on other thread after it was interrupted");
             } catch (Throwable t) {

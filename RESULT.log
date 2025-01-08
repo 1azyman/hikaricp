@@ -1,0 +1,309 @@
+2025-01-08 08:47:46,838 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): Class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+2025-01-08 08:47:46,866 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): HikariPool-1 - configuration:
+2025-01-08 08:47:46,867 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): allowPoolSuspension.............false
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): autoCommit......................false
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): catalog.........................none
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): connectionInitSql...............none
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): connectionTestQuery.............none
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): connectionTimeout...............30000
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): credentials.....................com.zaxxer.hikari.util.Credentials@7fa05ed9
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): dataSource......................none
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): dataSourceClassName.............none
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): dataSourceJNDI..................none
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): dataSourceProperties............{password=<masked>}
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): driverClassName................."oracle.jdbc.OracleDriver"
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): exceptionOverride...............none
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): exceptionOverrideClassName......none
+2025-01-08 08:47:46,868 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): healthCheckProperties...........{}
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): healthCheckRegistry.............none
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): idleTimeout.....................600000
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): initializationFailTimeout.......1
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): isolateInternalQueries..........true
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): jdbcUrl.........................jdbc:oracle:thin:@localhost:1521:XE
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): keepaliveTime...................120000
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): leakDetectionThreshold..........0
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): maxLifetime.....................1800000
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): maximumPoolSize.................20
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): metricRegistry..................none
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): metricsTrackerFactory...........none
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): minimumIdle.....................8
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): password........................<masked>
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): poolName........................"HikariPool-1"
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): readOnly........................false
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): registerMbeans..................true
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): scheduledExecutor...............none
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): schema..........................none
+2025-01-08 08:47:46,869 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): threadFactory...................internal
+2025-01-08 08:47:46,870 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): transactionIsolation............"TRANSACTION_READ_COMMITTED"
+2025-01-08 08:47:46,870 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): username........................"midtest410"
+2025-01-08 08:47:46,870 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.HikariConfig): validationTimeout...............5000
+2025-01-08 08:47:46,872 [TestNG-method=testOracle-1] INFO  (com.zaxxer.hikari.HikariDataSource): HikariPool-1 - Starting...
+2025-01-08 08:47:46,876 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (4adf6049-24f8-42b0-949d-d2ee86f0e472)
+2025-01-08 08:47:47,238 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (4adf6049-24f8-42b0-949d-d2ee86f0e472)
+2025-01-08 08:47:47,239 [TestNG-method=testOracle-1] INFO  (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@53f055e9
+2025-01-08 08:47:47,241 [TestNG-method=testOracle-1] INFO  (com.zaxxer.hikari.HikariDataSource): HikariPool-1 - Start completed.
+2025-01-08 08:47:47,241 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (36bf2172-cf23-4708-9d27-8be0c552b214)
+2025-01-08 08:47:47,300 [TestNG-method=testOracle-1] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on main thread: 123
+2025-01-08 08:47:47,309 [Thread-2] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread: 123
+2025-01-08 08:47:47,345 [HikariPool-1:housekeeper] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Before cleanup stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:47,345 [HikariPool-1:housekeeper] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - After cleanup  stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:47,402 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (36bf2172-cf23-4708-9d27-8be0c552b214)
+2025-01-08 08:47:47,402 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@395e9f96
+2025-01-08 08:47:47,438 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (d3eec326-c9b2-4e59-a41e-4b5e0db0afc2)
+2025-01-08 08:47:47,609 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (d3eec326-c9b2-4e59-a41e-4b5e0db0afc2)
+2025-01-08 08:47:47,609 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@535fef5c
+2025-01-08 08:47:47,644 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - After adding stats (total=3/20, idle=3/8, active=0, waiting=0)
+2025-01-08 08:47:47,645 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (0fe6b86c-c01c-4157-82a3-60f66d865884)
+2025-01-08 08:47:47,809 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (0fe6b86c-c01c-4157-82a3-60f66d865884)
+2025-01-08 08:47:47,809 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1c48e0c5
+2025-01-08 08:47:47,822 [Thread-2] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread: 123
+2025-01-08 08:47:47,841 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - After adding stats (total=4/20, idle=4/8, active=0, waiting=0)
+2025-01-08 08:47:47,841 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (6cd1db8a-2536-4d78-a5d6-3c1a6a53bd12)
+2025-01-08 08:47:48,005 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (6cd1db8a-2536-4d78-a5d6-3c1a6a53bd12)
+2025-01-08 08:47:48,005 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2a7cf1ba
+2025-01-08 08:47:48,037 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - After adding stats (total=5/20, idle=5/8, active=0, waiting=0)
+2025-01-08 08:47:48,037 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (59c4c3c7-d093-4cf5-afe5-b5b404d680a0)
+2025-01-08 08:47:48,205 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (59c4c3c7-d093-4cf5-afe5-b5b404d680a0)
+2025-01-08 08:47:48,205 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@164f42d0
+2025-01-08 08:47:48,239 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - After adding stats (total=6/20, idle=6/8, active=0, waiting=0)
+2025-01-08 08:47:48,240 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (a93f5744-3823-4160-80de-886e57206b1b)
+2025-01-08 08:47:48,336 [Thread-2] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread: 123
+2025-01-08 08:47:48,407 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (a93f5744-3823-4160-80de-886e57206b1b)
+2025-01-08 08:47:48,407 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@60abe921
+2025-01-08 08:47:48,438 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - After adding stats (total=7/20, idle=7/8, active=0, waiting=0)
+2025-01-08 08:47:48,439 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (e7283480-a9cf-4130-aa6d-65c33ab651fa)
+2025-01-08 08:47:48,608 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (e7283480-a9cf-4130-aa6d-65c33ab651fa)
+2025-01-08 08:47:48,608 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@31e369b7
+2025-01-08 08:47:48,643 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - After adding stats (total=8/20, idle=8/8, active=0, waiting=0)
+2025-01-08 08:47:48,643 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=8/20, idle=8/8, active=0, waiting=0)
+2025-01-08 08:47:48,855 [Thread-2] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread: 123
+2025-01-08 08:47:49,307 [TestNG-method=testOracle-1] INFO  (com.evolveum.hikaricp.PoolTest): Interrupting other thread
+2025-01-08 08:47:49,308 [TestNG-method=testOracle-1] INFO  (com.evolveum.hikaricp.PoolTest): Interrupted other thread
+2025-01-08 08:47:49,308 [Thread-2] ERROR (com.evolveum.hikaricp.PoolTest): Interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep0(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:509)
+	at com.evolveum.hikaricp.PoolTest$MyRunnable.run(PoolTest.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-01-08 08:47:49,313 [Thread-2] WARN  (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@395e9f96 (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2025-01-08 08:47:49,315 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@395e9f96: (connection is dead)
+2025-01-08 08:47:49,316 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (dad6a0fd-de48-4a3d-8f0e-186eabb802e6)
+2025-01-08 08:47:49,316 [Thread-2] WARN  (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@535fef5c (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2025-01-08 08:47:49,316 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@535fef5c: (connection is dead)
+2025-01-08 08:47:49,316 [Thread-2] WARN  (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@1c48e0c5 (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2025-01-08 08:47:49,316 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1c48e0c5: (connection is dead)
+2025-01-08 08:47:49,317 [Thread-2] WARN  (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@2a7cf1ba (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2025-01-08 08:47:49,317 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2a7cf1ba: (connection is dead)
+2025-01-08 08:47:49,317 [Thread-2] WARN  (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@164f42d0 (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2025-01-08 08:47:49,317 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@164f42d0: (connection is dead)
+2025-01-08 08:47:49,317 [Thread-2] WARN  (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@60abe921 (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2025-01-08 08:47:49,317 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@60abe921: (connection is dead)
+2025-01-08 08:47:49,317 [Thread-2] WARN  (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@31e369b7 (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2025-01-08 08:47:49,317 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@31e369b7: (connection is dead)
+2025-01-08 08:47:49,324 [TestNG-method=testOracle-1] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on main thread after other thread was interrupted: 123
+2025-01-08 08:47:49,498 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (dad6a0fd-de48-4a3d-8f0e-186eabb802e6)
+2025-01-08 08:47:49,498 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5a0caa94
+2025-01-08 08:47:49,533 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (c8dec41e-5156-468a-aa76-73e138cfc0f2)
+2025-01-08 08:47:49,696 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (c8dec41e-5156-468a-aa76-73e138cfc0f2)
+2025-01-08 08:47:49,696 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@91c2e06
+2025-01-08 08:47:49,729 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Attempting to create/setup new connection (d24503b6-ba27-46ef-ad6a-1d571ee08b37)
+2025-01-08 08:47:49,837 [TestNG-method=testOracle-1] INFO  (com.zaxxer.hikari.HikariDataSource): HikariPool-1 - Shutdown initiated...
+2025-01-08 08:47:49,837 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Before shutdown stats (total=3/20, idle=3/8, active=0, waiting=0)
+2025-01-08 08:47:49,838 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@53f055e9: (connection evicted)
+2025-01-08 08:47:49,844 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5a0caa94: (connection evicted)
+2025-01-08 08:47:49,849 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@91c2e06: (connection evicted)
+2025-01-08 08:47:49,898 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Established new connection (d24503b6-ba27-46ef-ad6a-1d571ee08b37)
+2025-01-08 08:47:49,898 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@487626ac
+2025-01-08 08:47:49,932 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,932 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,932 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,932 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,932 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,932 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,933 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,933 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,933 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,933 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,933 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,933 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,933 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,934 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,934 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,934 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,934 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,934 [HikariPool-1:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - Connection not added, stats (total=1/20, idle=1/8, active=0, waiting=0)
+2025-01-08 08:47:49,935 [HikariPool-1:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@487626ac: (connection evicted)
+2025-01-08 08:47:49,941 [TestNG-method=testOracle-1] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-1 - After shutdown stats (total=0/20, idle=0/8, active=0, waiting=0)
+2025-01-08 08:47:49,941 [TestNG-method=testOracle-1] INFO  (com.zaxxer.hikari.HikariDataSource): HikariPool-1 - Shutdown completed.
+
+java.lang.AssertionError: Exception occurred in other thread
+java.lang.RuntimeException: Error while making query, this shouldn't happen
+	at com.evolveum.hikaricp.PoolTest.makeQuery(PoolTest.java:152)
+	at com.evolveum.hikaricp.PoolTest$MyRunnable.run(PoolTest.java:131)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:193)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:147)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at com.evolveum.hikaricp.PoolTest.makeQuery(PoolTest.java:139)
+	... 2 more
+Caused by: java.lang.InterruptedException
+	at java.base/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:340)
+	at com.zaxxer.hikari.util.ConcurrentBag.borrow(ConcurrentBag.java:151)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:165)
+	... 5 more
+
+Expected :null
+Actual   :java.lang.RuntimeException: Error while making query, this shouldn't happen
+<Click to see difference>
+
+
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotSame(Assert.java:1574)
+	at org.testng.Assert.assertNull(Assert.java:1507)
+	at com.evolveum.hikaricp.PoolTest.testThreadInterruption(PoolTest.java:55)
+	at com.evolveum.hikaricp.PoolTest.testOracle(PoolTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:144)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:394)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:310)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:695)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+2025-01-08 08:47:49,949 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): Class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+2025-01-08 08:47:49,949 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): HikariPool-2 - configuration:
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): allowPoolSuspension.............false
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): autoCommit......................false
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): catalog.........................none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): connectionInitSql...............none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): connectionTestQuery.............none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): connectionTimeout...............30000
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): credentials.....................com.zaxxer.hikari.util.Credentials@18e733c5
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): dataSource......................none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): dataSourceClassName.............none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): dataSourceJNDI..................none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): dataSourceProperties............{password=<masked>}
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): driverClassName................."org.postgresql.Driver"
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): exceptionOverride...............none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): exceptionOverrideClassName......none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): healthCheckProperties...........{}
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): healthCheckRegistry.............none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): idleTimeout.....................600000
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): initializationFailTimeout.......1
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): isolateInternalQueries..........true
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): jdbcUrl.........................jdbc:postgresql://localhost:5432/postgres
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): keepaliveTime...................120000
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): leakDetectionThreshold..........0
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): maxLifetime.....................1800000
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): maximumPoolSize.................20
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): metricRegistry..................none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): metricsTrackerFactory...........none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): minimumIdle.....................8
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): password........................<masked>
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): poolName........................"HikariPool-2"
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): readOnly........................false
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): registerMbeans..................true
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): scheduledExecutor...............none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): schema..........................none
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): threadFactory...................internal
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): transactionIsolation............"TRANSACTION_READ_COMMITTED"
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): username........................"postgres"
+2025-01-08 08:47:49,950 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.HikariConfig): validationTimeout...............5000
+2025-01-08 08:47:49,951 [TestNG-method=testPostgreSQL-1] INFO  (com.zaxxer.hikari.HikariDataSource): HikariPool-2 - Starting...
+2025-01-08 08:47:49,954 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Attempting to create/setup new connection (87ff319b-7096-4eb8-8b06-714d79f3c659)
+2025-01-08 08:47:50,065 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Established new connection (87ff319b-7096-4eb8-8b06-714d79f3c659)
+2025-01-08 08:47:50,065 [TestNG-method=testPostgreSQL-1] INFO  (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7ea6ccd3
+2025-01-08 08:47:50,065 [TestNG-method=testPostgreSQL-1] INFO  (com.zaxxer.hikari.HikariDataSource): HikariPool-2 - Start completed.
+2025-01-08 08:47:50,066 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Attempting to create/setup new connection (5f44e14f-b5e2-429a-8f50-3295197f7851)
+2025-01-08 08:47:50,073 [TestNG-method=testPostgreSQL-1] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on main thread: 123
+2025-01-08 08:47:50,078 [Thread-3] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread: 123
+2025-01-08 08:47:50,107 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Established new connection (5f44e14f-b5e2-429a-8f50-3295197f7851)
+2025-01-08 08:47:50,107 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@4ab66294
+2025-01-08 08:47:50,171 [HikariPool-2:housekeeper] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Before cleanup stats (total=2/20, idle=2/8, active=0, waiting=0)
+2025-01-08 08:47:50,171 [HikariPool-2:housekeeper] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - After cleanup  stats (total=2/20, idle=2/8, active=0, waiting=0)
+2025-01-08 08:47:50,171 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Attempting to create/setup new connection (72414a48-9127-4601-9924-76b9d7d188a2)
+2025-01-08 08:47:50,205 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Established new connection (72414a48-9127-4601-9924-76b9d7d188a2)
+2025-01-08 08:47:50,205 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3e71b9e7
+2025-01-08 08:47:50,240 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - After adding stats (total=3/20, idle=3/8, active=0, waiting=0)
+2025-01-08 08:47:50,241 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Attempting to create/setup new connection (6d6d1bd3-762f-4043-bef2-e76791e484dc)
+2025-01-08 08:47:50,276 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Established new connection (6d6d1bd3-762f-4043-bef2-e76791e484dc)
+2025-01-08 08:47:50,276 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7eebc2a3
+2025-01-08 08:47:50,306 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - After adding stats (total=4/20, idle=4/8, active=0, waiting=0)
+2025-01-08 08:47:50,306 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Attempting to create/setup new connection (b50c1fe0-f211-41d5-ae63-c0b550cb76e4)
+2025-01-08 08:47:50,340 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Established new connection (b50c1fe0-f211-41d5-ae63-c0b550cb76e4)
+2025-01-08 08:47:50,340 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6bd511c3
+2025-01-08 08:47:50,375 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - After adding stats (total=5/20, idle=5/8, active=0, waiting=0)
+2025-01-08 08:47:50,375 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Attempting to create/setup new connection (29365244-3768-4fbc-81c2-f3c704895c7a)
+2025-01-08 08:47:50,408 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Established new connection (29365244-3768-4fbc-81c2-f3c704895c7a)
+2025-01-08 08:47:50,408 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@1926862a
+2025-01-08 08:47:50,442 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - After adding stats (total=6/20, idle=6/8, active=0, waiting=0)
+2025-01-08 08:47:50,442 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Attempting to create/setup new connection (285cfd23-5041-42c5-9195-70a1f271a2e5)
+2025-01-08 08:47:50,477 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Established new connection (285cfd23-5041-42c5-9195-70a1f271a2e5)
+2025-01-08 08:47:50,478 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@46443651
+2025-01-08 08:47:50,513 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - After adding stats (total=7/20, idle=7/8, active=0, waiting=0)
+2025-01-08 08:47:50,513 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Attempting to create/setup new connection (624a09e0-b402-4d91-b872-a2955598b0c1)
+2025-01-08 08:47:50,548 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Established new connection (624a09e0-b402-4d91-b872-a2955598b0c1)
+2025-01-08 08:47:50,548 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@639d6d9
+2025-01-08 08:47:50,584 [HikariPool-2:connection-adder] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - After adding stats (total=8/20, idle=8/8, active=0, waiting=0)
+2025-01-08 08:47:50,591 [Thread-3] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread: 123
+2025-01-08 08:47:51,124 [Thread-3] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread: 123
+2025-01-08 08:47:51,668 [Thread-3] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread: 123
+2025-01-08 08:47:52,081 [TestNG-method=testPostgreSQL-1] INFO  (com.evolveum.hikaricp.PoolTest): Interrupting other thread
+2025-01-08 08:47:52,081 [TestNG-method=testPostgreSQL-1] INFO  (com.evolveum.hikaricp.PoolTest): Interrupted other thread
+2025-01-08 08:47:52,081 [Thread-3] ERROR (com.evolveum.hikaricp.PoolTest): Interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep0(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:509)
+	at com.evolveum.hikaricp.PoolTest$MyRunnable.run(PoolTest.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-01-08 08:47:52,089 [TestNG-method=testPostgreSQL-1] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on main thread after other thread was interrupted: 123
+2025-01-08 08:47:52,100 [Thread-3] INFO  (com.evolveum.hikaricp.PoolTest): Doing some work on other thread after it was interrupted: 123
+2025-01-08 08:47:52,598 [TestNG-method=testPostgreSQL-1] INFO  (com.zaxxer.hikari.HikariDataSource): HikariPool-2 - Shutdown initiated...
+2025-01-08 08:47:52,598 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - Before shutdown stats (total=8/20, idle=8/8, active=0, waiting=0)
+2025-01-08 08:47:52,599 [HikariPool-2:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Closing connection org.postgresql.jdbc.PgConnection@7ea6ccd3: (connection evicted)
+2025-01-08 08:47:52,599 [HikariPool-2:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Closing connection org.postgresql.jdbc.PgConnection@4ab66294: (connection evicted)
+2025-01-08 08:47:52,599 [HikariPool-2:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Closing connection org.postgresql.jdbc.PgConnection@3e71b9e7: (connection evicted)
+2025-01-08 08:47:52,599 [HikariPool-2:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Closing connection org.postgresql.jdbc.PgConnection@7eebc2a3: (connection evicted)
+2025-01-08 08:47:52,599 [HikariPool-2:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Closing connection org.postgresql.jdbc.PgConnection@6bd511c3: (connection evicted)
+2025-01-08 08:47:52,599 [HikariPool-2:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Closing connection org.postgresql.jdbc.PgConnection@1926862a: (connection evicted)
+2025-01-08 08:47:52,599 [HikariPool-2:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Closing connection org.postgresql.jdbc.PgConnection@46443651: (connection evicted)
+2025-01-08 08:47:52,599 [HikariPool-2:connection-closer] DEBUG (com.zaxxer.hikari.pool.PoolBase): HikariPool-2 - Closing connection org.postgresql.jdbc.PgConnection@639d6d9: (connection evicted)
+2025-01-08 08:47:52,599 [TestNG-method=testPostgreSQL-1] DEBUG (com.zaxxer.hikari.pool.HikariPool): HikariPool-2 - After shutdown stats (total=0/20, idle=0/8, active=0, waiting=0)
+2025-01-08 08:47:52,600 [TestNG-method=testPostgreSQL-1] INFO  (com.zaxxer.hikari.HikariDataSource): HikariPool-2 - Shutdown completed.
